@@ -119,8 +119,8 @@ A non-exhaustive list of such commands includes:
 * `git add -p [<pathspec>...]`
 * `git clone <repository> [<directory>]`
 * `git log [--format=fuller]`
-* `git commit --amend --no-edit --date=now` if there was something I was planning to include in the most recent commit, but forgot to, and then subsequently realized that, so I stage it with `aa` and then amend the commit while also updating the commit date so that it is correct. Preferably before pushing the commit, otherwise force push is needed.
-* `git commit --amend --no-edit --reset-author`, if I commited with an e-mail that I use for one project, while working on another project for which I use a different e-mail address.
+* `git commit --amend --no-edit --date=now` when there was something I was planning to include in the most recent commit, but forgot to, and then subsequently realized that, so I stage it with `aa` and then amend the commit while also updating the commit date so that it is correct. Preferably before pushing the commit, otherwise force push is needed.
+* `git commit --amend --no-edit --reset-author` when I commited with an e-mail that I use for one project, while working on another project for which I use a different e-mail address.
 * `git stash [-p]`
 * `git stash list`
 * `git stash show [<stash>]`
