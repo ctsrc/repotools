@@ -1,7 +1,15 @@
 # Shell command aliases
 
-This repository contains a few short-name scripts that serve as aliases
-for some of the shell commands that I use most frequently.
+I've got a handful of aliases that have been very very essential
+to me for many years now. It's all about identifying a select few
+commands that you use a lot, and keeping in mind what the effect
+would be if you were to apply any of the mindlessly.
+
+You then define short and meaningful aliases that are fast to type
+for the commands that you use the most but which don't require much
+care.
+
+Then the command line stays a joy to use.
 
 ## Background
 
@@ -154,16 +162,3 @@ rather than bother to remember it. Like:
 
 * `git checkout --orphan <new_branch>`
 * Rebasing
-
-## Conclusion
-
-I've got a handful of aliases that have been very very essential
-to me for many years now. It's all about identifying a select few
-commands that you use a lot, and keeping in mind what the effect
-would be if you were to apply any of the mindlessly.
-
-You then define short and meaningful aliases that are fast to type
-for the commands that you use the most but which don't require much
-care.
-
-Then the command line stays a joy to use.
