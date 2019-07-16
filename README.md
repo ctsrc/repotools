@@ -3,7 +3,7 @@
 I've got a handful of aliases that have been very very essential
 to me for many years now. It's all about identifying a select few
 commands that you use a lot, and keeping in mind what the effect
-would be if you were to apply any of the mindlessly.
+would be if you were to apply any of them mindlessly.
 
 You then define short and meaningful aliases that are fast to type
 for the commands that you use the most but which don't require much
