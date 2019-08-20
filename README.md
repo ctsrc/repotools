@@ -29,6 +29,16 @@ steps that deal with what to include and what not to include in `.bashrc`
 for a given operating system or distro. Now my `.bashrc` files contain
 pretty much only that which is operating system/distro specific.
 
+```bash
+mkdir -p ~/src/github.com/ctsrc/
+cd ~/src/github.com/ctsrc/
+git clone git@github.com:ctsrc/shell-command-aliases.git
+mkdir -p ~/bin/
+cd ~/bin/
+find ../src/github.com/ctsrc/shell-command-aliases/bin/ -type f \
+  | xargs -L1 ln -s
+```
+
 The most important "aliases" in my workflow are those that I use
 practically all the time, namely those relating to git.
 
