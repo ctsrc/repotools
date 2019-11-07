@@ -86,6 +86,11 @@ The alias `di` shows the diff for the staged changes against HEAD.
 
 `di` calls `git diff --cached` with the optionally provided argument.
 
+### `dxne [<pattern>...]`
+
+List untracked or ignored files and directories in current directory,
+except matching `[<pattern>...]`.
+
 ### `cm <message>` – commit with message
 
 When it comes time to commit, I use the alias `cm`.
