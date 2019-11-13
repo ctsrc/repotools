@@ -13,6 +13,8 @@ Then the command line stays a joy to use.
 
 ## Installation
 
+Clone repository
+
 ```bash
 mkdir -p ~/src/github.com/ctsrc/
 cd ~/src/github.com/ctsrc/
@@ -20,8 +22,7 @@ git clone git@github.com:ctsrc/shell-command-aliases.git || \
 git clone https://github.com/ctsrc/shell-command-aliases.git
 ```
 
-Either way which way you do it, proceed then create symlinks
-in your `~/bin/`.
+Create symlinks in your `~/bin/`.
 
 ```bash
 mkdir -p ~/bin/
