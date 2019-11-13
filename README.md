@@ -1,4 +1,4 @@
-# Shell command aliases
+# repotools
 
 I've got a handful of aliases that have been very very essential
 to me for many years now. It's all about identifying a select few
@@ -18,15 +18,15 @@ Clone repository
 ```bash
 mkdir -p ~/src/github.com/ctsrc/
 cd ~/src/github.com/ctsrc/
-git clone git@github.com:ctsrc/shell-command-aliases.git || \
-git clone https://github.com/ctsrc/shell-command-aliases.git
+git clone git@github.com:ctsrc/repotools.git || \
+git clone https://github.com/ctsrc/repotools.git
 ```
 
 Create symlinks in your `~/bin/`.
 
 ```bash
 mkdir -p ~/bin/
-find ~/src/github.com/ctsrc/shell-command-aliases/bin/ -type f \
+find ~/src/github.com/ctsrc/repotools/bin/ -type f \
   -exec ln -s {} ~/bin/ \;
 ```
 
