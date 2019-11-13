@@ -11,6 +11,46 @@ care.
 
 Then the command line stays a joy to use.
 
+## Installation
+
+```bash
+mkdir -p ~/src/github.com/ctsrc/
+cd ~/src/github.com/ctsrc/
+```
+
+Clone repository. Either over SSH if you have a GitHub account
+with one a public key from your user on the current computer;
+
+```
+git clone git@github.com:ctsrc/shell-command-aliases.git
+```
+
+or over HTTPS if you don't;
+
+```
+git clone https://github.com/ctsrc/shell-command-aliases.git
+```
+
+Either way which way you do it, proceed then create symlinks
+in your `~/bin/`.
+
+```bash
+mkdir -p ~/bin/
+find ~/src/github.com/ctsrc/shell-command-aliases/bin/ -type f \
+  -exec ln -s {} ~/bin/ \;
+```
+
+Edit your `~/.profile` (bash and many others), `~/.zshenv` (zsh)
+or whatever is the equivalent for your shell, adding `~/bin`
+to your `$PATH` if it's not already there.
+
+If your `~/.profile` or equivalent has a check for the existence
+of `~/bin/` that would add it to `$PATH` if `~/bin/` exists, but
+you had not created that directory prior to this then you should
+just log out and log in again. Same goes if you edited the file
+because `~/bin/` was not mentioned from before; log out and log
+in again.
+
 ## Background
 
 I used to keep aliases in my `.bashrc`, but now that I run different operating
@@ -49,22 +89,24 @@ sometimes pass arguments or additional flags to, the "aliases"
 pass these on to the command that they invoke, like you will see
 with `aa` and others below.
 
-## git
+## Usage
 
-### `dp [<pathspec>]` – diff pending, optionally limited to a given file or directory
+### git
+
+#### `dp [<pathspec>]` – diff pending, optionally limited to a given file or directory
 
 When I look at what changes I want to stage for commit, I type `dp`.
 
 `dp` calls `git diff` with the optionally provided argument.
 
-### `aa [<directory>...]` – add all, optionally limited to one or more directories
+#### `aa [<directory>...]` – add all, optionally limited to one or more directories
 
 When I want to stage everything, or everything in certain directories,
 for commit, I type `aa` or `aa <directory>...` respectively.
 
 `aa` calls `git add -A` with the optionally provided arguments.
 
-### `st [<pathspec>]` – status, optionally limited to a given file or directory
+#### `st [<pathspec>]` – status, optionally limited to a given file or directory
 
 My workflow usually goes, write some code, stage some code, research something,
 test the changes, write some code, stage some code, and so on.
@@ -75,7 +117,7 @@ For the high-level bird's eye view of that I have the alias `st`.
 
 `st` calls `git status` with the optionally provided argument.
 
-### `di [<pathspec>]` – diff staged, optionally limited to a given file or directory
+#### `di [<pathspec>]` – diff staged, optionally limited to a given file or directory
 
 Prior to committing, and also now and then while still working on the code,
 it is very useful to review what I am about commit, both to ensure that
@@ -86,24 +128,24 @@ The alias `di` shows the diff for the staged changes against HEAD.
 
 `di` calls `git diff --cached` with the optionally provided argument.
 
-### `dxne [<pattern>...]`
+#### `dxne [<pattern>...]`
 
 List untracked or ignored files and directories in current directory,
 except matching `[<pattern>...]`.
 
-### `cm <message>` – commit with message
+#### `cm <message>` – commit with message
 
 When it comes time to commit, I use the alias `cm`.
 
 `cm` calls `git commit -m` with the provided argument.
 
-### `pu [--tags | -f]` – push, optionally including refs under refs/tags, or force push
+#### `pu [--tags | -f]` – push, optionally including refs under refs/tags, or force push
 
 Finally I push with `pu`.
 
 `pu` calls `git push` with the optionally provided flag.
 
-### `le` – number of commits
+#### `le` – number of commits
 
 Among all of the aliases, this is the only one that doesn't match
 the meaning with its name. I would have named this alias as I initially
@@ -115,7 +157,7 @@ and nor do I feel like typing out the full path to netcat either, e.g.
 
 `le` calls `git shortlog -se`.
 
-### But wait, that doesn't quite cover all the git commands I really use
+#### But wait, that doesn't quite cover all the git commands I really use
 
 The seven aliases above cover the git commands I use the most often.
 
