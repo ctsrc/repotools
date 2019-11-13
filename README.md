@@ -16,18 +16,7 @@ Then the command line stays a joy to use.
 ```bash
 mkdir -p ~/src/github.com/ctsrc/
 cd ~/src/github.com/ctsrc/
-```
-
-Clone repository. Either over SSH if you have a GitHub account
-with one a public key from your user on the current computer;
-
-```
-git clone git@github.com:ctsrc/shell-command-aliases.git
-```
-
-or over HTTPS if you don't;
-
-```
+git clone git@github.com:ctsrc/shell-command-aliases.git || \
 git clone https://github.com/ctsrc/shell-command-aliases.git
 ```
 
