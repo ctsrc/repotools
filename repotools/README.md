@@ -15,12 +15,10 @@ install them right away.)
 
 ## Installation
 
-Precompiled binaries will be provided in the future.
-
-For now you'll need the Rust toolchain installed.
-
-If you don't have it already, head over to https://rustup.rs/ and follow
-the instructions there and then come back here.
+Precompiled binaries will be provided in the future, but for now you'll need
+to have the Rust toolchain installed. If you don't have the Rust toolchain
+installed already, head over to https://rustup.rs/ and follow the instructions
+there and then come back here.
 
 Once you have the Rust toolchain installed, simply run:
 
