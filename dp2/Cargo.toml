@@ -1,0 +1,15 @@
+[package]
+name = "dp2"
+description = "diff files pending staging in git repository, optionally limited to a given file or directory"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/ctsrc/repotools/dp2"
+version = "0.0.1"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+
+[[bin]]
+name = "dp"
+path = "src/main.rs"
+
+[dependencies]

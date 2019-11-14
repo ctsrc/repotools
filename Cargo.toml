@@ -1,0 +1,17 @@
+[workspace]
+
+members = [
+  "dp2",
+  "aa2",
+  "st2",
+  "di2",
+#  "dxne",
+  "cm2",
+  "pu2",
+  "le2",
+]
+
+exclude = [
+  "repotools",
+  "redir",
+]

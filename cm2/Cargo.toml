@@ -1,0 +1,15 @@
+[package]
+name = "cm2"
+description = "commit with message in git repository"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/ctsrc/repotools/cm2"
+version = "0.0.1"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+
+[[bin]]
+name = "cm"
+path = "src/main.rs"
+
+[dependencies]

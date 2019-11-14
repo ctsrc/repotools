@@ -1,0 +1,15 @@
+[package]
+name = "aa2"
+description = "add all files in git repository, optionally limited to one or more directories"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/ctsrc/repotools/aa2"
+version = "0.0.1"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+
+[[bin]]
+name = "aa"
+path = "src/main.rs"
+
+[dependencies]

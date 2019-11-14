@@ -1,0 +1,15 @@
+[package]
+name = "di2"
+description = "diff staged files in git repository, optionally limited to a given file or directory"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/ctsrc/repotools/di2"
+version = "0.0.1"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+
+[[bin]]
+name = "di"
+path = "src/main.rs"
+
+[dependencies]

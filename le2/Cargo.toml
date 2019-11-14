@@ -1,0 +1,15 @@
+[package]
+name = "le2"
+description = "number of commits of each author in git repository"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/ctsrc/repotools/le2"
+version = "0.0.1"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+
+[[bin]]
+name = "le"
+path = "src/main.rs"
+
+[dependencies]

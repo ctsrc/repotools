@@ -1,0 +1,35 @@
+[package]
+name = "repotools"
+description = "Short names, big time savings. Repotools is a collection of commands with short but meaningful names, for the git operations you perform most often."
+license = "ISC"
+version = "0.0.9000"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+
+[[bin]]
+name = "dp"
+path = "src/dp2/main.rs"
+
+[[bin]]
+name = "aa"
+path = "src/aa2/main.rs"
+
+[[bin]]
+name = "st"
+path = "src/st2/main.rs"
+
+[[bin]]
+name = "di"
+path = "src/di2/main.rs"
+
+[[bin]]
+name = "cm"
+path = "src/cm2/main.rs"
+
+[[bin]]
+name = "pu"
+path = "src/pu2/main.rs"
+
+[[bin]]
+name = "le"
+path = "src/le2/main.rs"

@@ -1,0 +1,15 @@
+[package]
+name = "pu2"
+description = "push to git remote, optionally including refs under refs/tags, or force push"
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/ctsrc/repotools/pu2"
+version = "0.0.1"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+
+[[bin]]
+name = "pu"
+path = "src/main.rs"
+
+[dependencies]
