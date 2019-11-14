@@ -12,8 +12,8 @@ The commands are, in short order: `dp`, `aa`, `st`, `di`, `cm`, `pu` and `le`.
 
 Read on below to see what they mean and what arguments they take, or
 [skip straight to installation](#installation) if you are feeling too impatient.
-(But do go back and read how to use them afterwards if you do go ahead and
-install them right away.)
+(But do go back and read how to use them afterwards if you end up installing
+them right away.)
 
 ## Usage
 
