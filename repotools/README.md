@@ -34,3 +34,4 @@ cargo install repotools
 
 If you find this project useful, remember to
 [star it on GitHub](https://github.com/ctsrc/repotools#start-of-content).
+[![GitHub stars](https://img.shields.io/github/stars/ctsrc/repotools?style=social)](https://github.com/ctsrc/repotools#start-of-content)
