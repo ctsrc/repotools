@@ -2,9 +2,11 @@
 
 [![Crates.io](https://img.shields.io/crates/v/repotools.svg)](https://crates.io/crates/repotools)
 
-Short names, big time savings – a collection of commands for the git operations you perform most often.
+Short names, big time savings – a collection of commands
+for the git operations you perform most often.
 
-Meaningful and memorable: All of the commands have names that, even though short, make sense... For the most part ;)
+Meaningful and memorable: All of the commands have names that,
+even though short, make sense... For the most part ;)
 
 The commands are, in short order: `dp`, `aa`, `st`, `di`, `cm`, `pu` and `le`.
 
