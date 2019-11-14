@@ -74,69 +74,12 @@ with `aa` and others below.
 
 ### git
 
-#### `dp [<pathspec>]` – diff pending, optionally limited to a given file or directory
-
-When I look at what changes I want to stage for commit, I type `dp`.
-
-`dp` calls `git diff` with the optionally provided argument.
-
-#### `aa [<directory>...]` – add all, optionally limited to one or more directories
-
-When I want to stage everything, or everything in certain directories,
-for commit, I type `aa` or `aa <directory>...` respectively.
-
-`aa` calls `git add -A` with the optionally provided arguments.
-
-#### `st [<pathspec>]` – status, optionally limited to a given file or directory
-
-My workflow usually goes, write some code, stage some code, research something,
-test the changes, write some code, stage some code, and so on.
-
-Every now and then between writing, staging, etc, I look at what
-I've staged for commit so far, and what has not yet been staged.
-For the high-level bird's eye view of that I have the alias `st`.
-
-`st` calls `git status` with the optionally provided argument.
-
-#### `di [<pathspec>]` – diff staged, optionally limited to a given file or directory
-
-Prior to committing, and also now and then while still working on the code,
-it is very useful to review what I am about commit, both to ensure that
-I am about to commit what I think I am about to commit, and in order to
-write useful commit messages that accurately describe the changes.
-
-The alias `di` shows the diff for the staged changes against HEAD.
-
-`di` calls `git diff --cached` with the optionally provided argument.
+(Most content moved to new README.)
 
 #### `dxne [<pattern>...]`
 
 List untracked or ignored files and directories in current directory,
 except matching `[<pattern>...]`.
-
-#### `cm <message>` – commit with message
-
-When it comes time to commit, I use the alias `cm`.
-
-`cm` calls `git commit -m` with the provided argument.
-
-#### `pu [--tags | -f]` – push, optionally including refs under refs/tags, or force push
-
-Finally I push with `pu`.
-
-`pu` calls `git push` with the optionally provided flag.
-
-#### `le` – number of commits
-
-Among all of the aliases, this is the only one that doesn't match
-the meaning with its name. I would have named this alias as I initially
-did; `nc`, if it wasn't for the fact that the netcat command on a lot
-of systems is named `nc` already. And when I used aliases, I didn't feel
-like having to remember to type `\nc` when I wanted netcat, nor did I
-and nor do I feel like typing out the full path to netcat either, e.g.
-`/usr/bin/nc`. So I took the "l" for "log" and the "e" for the `-e` flag.
-
-`le` calls `git shortlog -se`.
 
 #### But wait, that doesn't quite cover all the git commands I really use
 
