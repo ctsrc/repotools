@@ -17,20 +17,20 @@ them right away.)
 
 ## Usage
 
-#### `dp [<path>...]` – diff pending, optionally limited to one or more files or directories
+### `dp [<path>...]` – diff pending, optionally limited to one or more files or directories
 
 When you look at what changes you want to stage for commit, you type `dp`.
 
 `dp` calls `git diff` with the optionally provided arguments.
 
-#### `aa [<pathspec>...]` – add all, optionally limited to one or more directories
+### `aa [<pathspec>...]` – add all, optionally limited to one or more directories
 
 When you want to stage everything, or everything in certain directories,
 for commit, you type `aa` or `aa <directory>...` respectively.
 
 `aa` calls `git add -A` with the optionally provided arguments.
 
-#### `st [<pathspec>...]` – status, optionally limited to one or more files or directories
+### `st [<pathspec>...]` – status, optionally limited to one or more files or directories
 
 My workflow usually goes, write some code, stage some code, research something,
 test the changes, write some code, stage some code, and so on.
@@ -41,7 +41,7 @@ For the high-level bird's eye view of that there is `st`.
 
 `st` calls `git status` with the optionally provided argument.
 
-#### `di [<path>...]` – diff staged, optionally limited to one or more files or directories
+### `di [<path>...]` – diff staged, optionally limited to one or more files or directories
 
 Prior to committing, and also now and then while still working on the code,
 it is very useful to review what you are about commit, both to ensure that
@@ -52,19 +52,19 @@ write useful commit messages that accurately describe the changes.
 
 `di` calls `git diff --cached` with the optionally provided argument.
 
-#### `cm <message>` – commit with message
+### `cm <message>` – commit with message
 
 When it comes time to commit, you have `cm`.
 
 `cm` calls `git commit -m` with the provided argument.
 
-#### `pu [--tags | -f]` – push, optionally including refs under refs/tags, or force push
+### `pu [--tags | -f]` – push, optionally including refs under refs/tags, or force push
 
 Finally you push with `pu`.
 
 `pu` calls `git push` with the optionally provided flag.
 
-#### `le` – number of commits
+### `le` – number of commits
 
 Among all of the aliases, this is the only one that doesn't match
 the meaning with its name. I would have named this alias as I initially
