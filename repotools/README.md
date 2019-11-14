@@ -7,7 +7,7 @@ Meaningful and memorable: All of the commands have names that, even though short
 The commands are, in short order: `dp`, `aa`, `st`, `di`, `cm`, `pu` and `le`.
 
 Read on below to see what they mean and what arguments they take, or
-[skip straight to installation](#install) if you are feeling too impatient.
+[skip straight to installation](#installation) if you are feeling too impatient.
 (But do go back and read how to use them afterwards if you do go ahead and
 install them right away.)
 
