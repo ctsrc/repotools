@@ -13,5 +13,5 @@ members = [
 
 exclude = [
   "repotools",
-  "redir",
+  "see_instead",
 ]
