@@ -34,4 +34,4 @@ Every now and then between writing, staging, etc, I look at what
 I've staged for commit so far, and what has not yet been staged.
 For the high-level bird's eye view of that there is `st`.
 
-`st` calls `git status` with the optionally provided argument.
+`st` is like `git status`, only more awesome.

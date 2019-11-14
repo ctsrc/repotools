@@ -21,14 +21,14 @@ them right away.)
 
 When you look at what changes you want to stage for commit, you type `dp`.
 
-`dp` calls `git diff` with the optionally provided arguments.
+`dp` is like `git diff`, only more awesome.
 
 ### `aa [<pathspec>...]` – add all, optionally limited to one or more directories
 
 When you want to stage everything, or everything in certain directories,
 for commit, you type `aa` or `aa <directory>...` respectively.
 
-`aa` calls `git add -A` with the optionally provided arguments.
+`aa` is like `git add -A`, only more awesome.
 
 ### `st [<pathspec>...]` – status, optionally limited to one or more files or directories
 
@@ -39,7 +39,7 @@ Every now and then between writing, staging, etc, I look at what
 I've staged for commit so far, and what has not yet been staged.
 For the high-level bird's eye view of that there is `st`.
 
-`st` calls `git status` with the optionally provided argument.
+`st` is like `git status`, only more awesome.
 
 ### `di [<path>...]` – diff staged, optionally limited to one or more files or directories
 
@@ -50,19 +50,19 @@ write useful commit messages that accurately describe the changes.
 
 `di` shows the diff for the staged changes against HEAD.
 
-`di` calls `git diff --cached` with the optionally provided argument.
+`di` is like `git diff --cached`, only more awesome.
 
 ### `cm <message>` – commit with message
 
 When it comes time to commit, you have `cm`.
 
-`cm` calls `git commit -m` with the provided argument.
+`cm` is like `git commit -m`, only more awesome.
 
 ### `pu [--tags | -f]` – push, optionally including refs under refs/tags, or force push
 
 Finally you push with `pu`.
 
-`pu` calls `git push` with the optionally provided flag.
+`pu` is like `git push`, only more awesome.
 
 ### `le` – number of commits
 
@@ -74,7 +74,7 @@ like having to remember to type `\nc` when I wanted netcat, nor did I
 and nor do I feel like typing out the full path to netcat either, e.g.
 `/usr/bin/nc`. So I took the "l" for "log" and the "e" for the `-e` flag.
 
-`le` calls `git shortlog -se`.
+`le` is like `git shortlog -se`, only more awesome.
 
 ## Installation
 
@@ -91,7 +91,8 @@ cargo install repotools
 
 ## Star Me on GitHub 🤩
 
-If you find this project useful, remember to
-[star it on GitHub](https://github.com/ctsrc/repotools#start-of-content).
+Do you think this project is awesome? I think *you* are awesome!
+Now show me some love and
+[star this project on GitHub](https://github.com/ctsrc/repotools#start-of-content).
 
 [![GitHub stars](https://img.shields.io/github/stars/ctsrc/repotools?style=social)](https://github.com/ctsrc/repotools#start-of-content)

@@ -34,4 +34,4 @@ write useful commit messages that accurately describe the changes.
 
 `di` shows the diff for the staged changes against HEAD.
 
-`di` calls `git diff --cached` with the optionally provided argument.
+`di` is like `git diff --cached`, only more awesome.

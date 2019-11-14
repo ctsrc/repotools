@@ -29,4 +29,4 @@ cargo install dp2
 
 When you look at what changes you want to stage for commit, you type `dp`.
 
-`dp` calls `git diff` with the optionally provided arguments.
+`dp` is like `git diff`, only more awesome.

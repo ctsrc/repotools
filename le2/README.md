@@ -35,4 +35,4 @@ like having to remember to type `\nc` when I wanted netcat, nor did I
 and nor do I feel like typing out the full path to netcat either, e.g.
 `/usr/bin/nc`. So I took the "l" for "log" and the "e" for the `-e` flag.
 
-`le` calls `git shortlog -se`.
+`le` is like `git shortlog -se`, only more awesome.

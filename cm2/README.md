@@ -29,4 +29,4 @@ cargo install cm2
 
 When it comes time to commit, you have `cm`.
 
-`cm` calls `git commit -m` with the provided argument.
+`cm` is like `git commit -m`, only more awesome.

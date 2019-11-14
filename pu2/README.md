@@ -29,4 +29,4 @@ cargo install pu2
 
 Finally you push with `pu`.
 
-`pu` calls `git push` with the optionally provided flag.
+`pu` is like `git push`, only more awesome.

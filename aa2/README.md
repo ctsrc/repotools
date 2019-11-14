@@ -30,4 +30,4 @@ cargo install aa2
 When you want to stage everything, or everything in certain directories,
 for commit, you type `aa` or `aa <directory>...` respectively.
 
-`aa` calls `git add -A` with the optionally provided arguments.
+`aa` is like `git add -A`, only more awesome.
