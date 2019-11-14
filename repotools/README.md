@@ -33,4 +33,4 @@ cargo install repotools
 ## Star Me
 
 If you find this project useful, remember to
-[star it on GitHub](https://github.com/ctsrc/repotools#start-of-content)
+[star it on GitHub](https://github.com/ctsrc/repotools#start-of-content).
