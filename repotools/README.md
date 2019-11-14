@@ -29,3 +29,8 @@ Once you have the Rust toolchain installed, simply run:
 ```bash
 cargo install repotools
 ```
+
+## Star Me
+
+If you find this project useful, remember to
+[star it on GitHub](https://github.com/ctsrc/repotools#start-of-content)
