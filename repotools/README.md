@@ -30,7 +30,7 @@ Once you have the Rust toolchain installed, simply run:
 cargo install repotools
 ```
 
-## Star Me
+## Star Me on GitHub
 
 If you find this project useful, remember to
 [star it on GitHub](https://github.com/ctsrc/repotools#start-of-content).
