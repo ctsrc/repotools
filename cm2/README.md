@@ -25,4 +25,8 @@ cargo install cm2
 
 ## Usage
 
+### `cm <message>` – commit with message
 
+When it comes time to commit, you have `cm`.
+
+`cm` calls `git commit -m` with the provided argument.

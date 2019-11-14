@@ -25,4 +25,8 @@ cargo install pu2
 
 ## Usage
 
+### `pu [--tags | -f]` – push, optionally including refs under refs/tags, or force push
 
+Finally you push with `pu`.
+
+`pu` calls `git push` with the optionally provided flag.

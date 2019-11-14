@@ -25,4 +25,13 @@ cargo install di2
 
 ## Usage
 
+### `di [<path>...]` – diff staged, optionally limited to one or more files or directories
 
+Prior to committing, and also now and then while still working on the code,
+it is very useful to review what you are about commit, both to ensure that
+you are about to commit what you think you are about to commit, and in order to
+write useful commit messages that accurately describe the changes.
+
+`di` shows the diff for the staged changes against HEAD.
+
+`di` calls `git diff --cached` with the optionally provided argument.

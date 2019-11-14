@@ -25,4 +25,8 @@ cargo install dp2
 
 ## Usage
 
+### `dp [<path>...]` – diff pending, optionally limited to one or more files or directories
 
+When you look at what changes you want to stage for commit, you type `dp`.
+
+`dp` calls `git diff` with the optionally provided arguments.

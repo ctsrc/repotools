@@ -25,4 +25,13 @@ cargo install st2
 
 ## Usage
 
+### `st [<pathspec>...]` – status, optionally limited to one or more files or directories
 
+My workflow usually goes, write some code, stage some code, research something,
+test the changes, write some code, stage some code, and so on.
+
+Every now and then between writing, staging, etc, I look at what
+I've staged for commit so far, and what has not yet been staged.
+For the high-level bird's eye view of that there is `st`.
+
+`st` calls `git status` with the optionally provided argument.
