@@ -2,6 +2,8 @@
 name = "repotools"
 description = "Short names, big time savings. Repotools is a collection of commands with short but meaningful names, for the git operations you perform most often."
 license = "ISC"
+readme = "README.md"
+repository = "https://github.com/ctsrc/repotools/tree/master/repotools"
 version = "0.0.9000"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
 edition = "2018"
