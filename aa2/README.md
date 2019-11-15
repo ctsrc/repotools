@@ -25,9 +25,9 @@ cargo install aa2
 
 ## Usage
 
-### `aa [<pathspec>...]` – add all, optionally limited to one or more directories
+### `aa [<path>...]` – add all files in git repository to index, optionally limited to one or more directories
 
 When you want to stage everything, or everything in certain directories,
-for commit, you type `aa` or `aa <directory>...` respectively.
+for commit, you type `aa` or `aa <path>...` respectively.
 
 `aa` is like `git add -A`, only more awesome.

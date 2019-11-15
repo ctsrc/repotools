@@ -1,0 +1,6 @@
+name: aa
+about: add all files in git repository to index, optionally limited to one or more directories
+args:
+  - path:
+      help: Directories to add content from.
+      multiple: true

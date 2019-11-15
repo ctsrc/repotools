@@ -23,10 +23,10 @@ When you look at what changes you want to stage for commit, you type `dp`.
 
 `dp` is like `git diff`, only more awesome.
 
-### `aa [<pathspec>...]` – add all, optionally limited to one or more directories
+### `aa [<path>...]` – add all files in git repository to index, optionally limited to one or more directories
 
 When you want to stage everything, or everything in certain directories,
-for commit, you type `aa` or `aa <directory>...` respectively.
+for commit, you type `aa` or `aa <path>...` respectively.
 
 `aa` is like `git add -A`, only more awesome.
 
