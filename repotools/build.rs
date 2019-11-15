@@ -45,7 +45,10 @@ fn main ()
   };
 
   // In repotools Cargo.toml there are several bin entries.
-  // In individual utility Cargo.toml
+  // In individual utility Cargo.toml there is one bin entry.
+  // Again though, to us there is no difference.
+  // (Except that we somewhat needlessly read the same Cargo.toml twice
+  //  but that's no big deal really.)
   for utility in cargo_toml["bin"].as_array().unwrap()
   {
     let utility_name = utility["name"].as_str().unwrap();
