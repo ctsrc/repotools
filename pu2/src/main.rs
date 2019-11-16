@@ -14,7 +14,6 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-use std::fs::metadata;
 use clap::load_yaml;
 use clap::App;
 

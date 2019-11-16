@@ -4,7 +4,7 @@ description = "status of git repository, optionally limited to one or more files
 license = "ISC"
 readme = "README.md"
 repository = "https://github.com/ctsrc/repotools/tree/master/st2"
-version = "0.9.0"
+version = "0.9.1"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
 edition = "2018"
 
