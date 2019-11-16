@@ -62,8 +62,6 @@ fn main ()
       .exec();
     eprintln!("{}: {}", command_name, err);
   }
-  else
-  {
-    std::process::exit(1);
-  }
+  // Getting to this point means preflight failed or exec failed.
+  std::process::exit(1);
 }
