@@ -11,36 +11,6 @@ care.
 
 Then the command line stays a joy to use.
 
-## Installation
-
-Clone repository
-
-```bash
-mkdir -p ~/src/github.com/ctsrc/
-cd ~/src/github.com/ctsrc/
-git clone git@github.com:ctsrc/repotools.git || \
-git clone https://github.com/ctsrc/repotools.git
-```
-
-Create symlinks in your `~/bin/`.
-
-```bash
-mkdir -p ~/bin/
-find ~/src/github.com/ctsrc/repotools/bin/ -type f \
-  -exec ln -s {} ~/bin/ \;
-```
-
-Edit your `~/.profile` (bash and many others), `~/.zshenv` (zsh)
-or whatever is the equivalent for your shell, adding `~/bin`
-to your `$PATH` if it's not already there.
-
-If your `~/.profile` or equivalent has a check for the existence
-of `~/bin/` that would add it to `$PATH` if `~/bin/` exists, but
-you had not created that directory prior to this then you should
-just log out and log in again. Same goes if you edited the file
-because `~/bin/` was not mentioned from before; log out and log
-in again.
-
 ## Background
 
 I used to keep aliases in my `.bashrc`, but now that I run different operating
