@@ -25,8 +25,18 @@ cargo install pu2
 
 ## Usage
 
-### `pu [--tags | -f]` – push, optionally including refs under refs/tags, or force push
+### `pu [--tags] [-f] [<repository>]` – push commits or tags to remote git repository
 
-Finally you push with `pu`.
+Use `pu` to push commits to the remote of the current branch
+(or to *origin* if no remote is configured for the current branch).
+
+Use `pu --tags` to push tags.
+
+Use `pu -f` to force push commits.
+
+Use `pu --tags -f` to force push tags.
+
+For all of the above, optionally specify which repository (`[<repository>]`)
+to push to, specified either as a named remote or as a URL.
 
 `pu` is like `git push`, only more awesome.
