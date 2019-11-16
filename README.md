@@ -52,7 +52,7 @@ write useful commit messages that accurately describe the changes.
 
 `di` is like `git diff --cached`, only more awesome.
 
-### `cm <message>` – commit with message
+### `cm <message>` – git commit with message
 
 When it comes time to commit, you have `cm`.
 

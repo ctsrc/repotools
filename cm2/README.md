@@ -25,7 +25,7 @@ cargo install cm2
 
 ## Usage
 
-### `cm <message>` – commit with message
+### `cm <message>` – git commit with message
 
 When it comes time to commit, you have `cm`.
 
