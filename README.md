@@ -30,7 +30,7 @@ for commit, you type `aa` or `aa <path>...` respectively.
 
 `aa` is like `git add -A`, only more awesome.
 
-### `st [<pathspec>...]` – status, optionally limited to one or more files or directories
+### `st [<pathspec>...]` – status of git repository, optionally limited to one or more files or directories
 
 My workflow usually goes, write some code, stage some code, research something,
 test the changes, write some code, stage some code, and so on.

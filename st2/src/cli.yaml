@@ -1,0 +1,6 @@
+name: st
+about: status of git repository, optionally limited to one or more files or directories
+args:
+  - pathspec:
+      help: Files and directories in repository to get status of.
+      multiple: true
