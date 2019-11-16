@@ -26,6 +26,7 @@ fn main ()
   let yaml = load_yaml!("cli.yaml");
   let command = App::from_yaml(yaml).version(LE_COMMAND_VERSION);
   let command_name: String = command.get_name().into();
+  command.get_matches();
 
   let err = exec::Command::new("git").arg("shortlog").arg("-se").exec();
   eprintln!("{}: {}", command_name, err);
