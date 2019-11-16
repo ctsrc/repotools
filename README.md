@@ -41,7 +41,7 @@ For the high-level bird's eye view of that there is `st`.
 
 `st` is like `git status`, only more awesome.
 
-### `di [<path>...]` – diff staged, optionally limited to one or more files or directories
+### `di [<path>...]` – diff files staged for commit in git repository, optionally limited to one or more files or directories
 
 Prior to committing, and also now and then while still working on the code,
 it is very useful to review what you are about commit, both to ensure that

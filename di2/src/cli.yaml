@@ -1,0 +1,6 @@
+name: di
+about: diff files staged for commit in git repository
+args:
+  - path:
+      help: Files or directories for git to look at.
+      multiple: true
