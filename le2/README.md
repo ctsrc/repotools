@@ -25,14 +25,13 @@ cargo install le2
 
 ## Usage
 
-### `le` – number of commits
+### `le` – number of commits by each author in git repository
 
-Among all of the aliases, this is the only one that doesn't match
-the meaning with its name. I would have named this alias as I initially
+Among all of the commands, this is the only one that doesn't match
+the meaning with its name. I would have named this command as I initially
 did; `nc`, if it wasn't for the fact that the netcat command on a lot
-of systems is named `nc` already. And when I used aliases, I didn't feel
-like having to remember to type `\nc` when I wanted netcat, nor did I
-and nor do I feel like typing out the full path to netcat either, e.g.
-`/usr/bin/nc`. So I took the "l" for "log" and the "e" for the `-e` flag.
+of systems is named `nc` already.
+
+The name comes from "l" for "log" and "e" for the `-e` flag.
 
 `le` is like `git shortlog -se`, only more awesome.
