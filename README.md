@@ -17,7 +17,7 @@ them right away.)
 
 ## Usage
 
-### `dp [<path>...]` – diff pending, optionally limited to one or more files or directories
+### `dp [<path>...]` – diff files pending staging in git repository, optionally limited to one or more files or directories
 
 When you look at what changes you want to stage for commit, you type `dp`.
 

@@ -1,0 +1,6 @@
+name: dp
+about: diff files pending staging in git repository
+args:
+  - path:
+      help: Files or directories for git to look at.
+      multiple: true
