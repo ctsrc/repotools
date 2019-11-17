@@ -104,10 +104,6 @@ Download links and installation instructions are provided below.
 
 Download: [repotools-v0.7.1-macOS-Catalina-x86_64.tbz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-macOS-Catalina-x86_64.tbz)
 
-Being based on Ubuntu 18.04 Bionic, KDE neon User Edition 5.17 and the former
-share the same binary release file. You should be able to use the same binaries
-on any other GNU/Linux distro that is based on Ubuntu 18.04 Bionic as well.
-
 Installation:
 
 ```sh
