@@ -89,8 +89,92 @@ The name comes from "l" for "log" and "e" for the `-e` flag.
 
 ## Installation
 
-Precompiled binaries will be provided in the future,
-but for now you'll need to build from source.
+### Precompiled binaries
+
+Precompiled binaries are available for the following operating systems:
+
+* macOS Catalina 10.15.1 x86_64
+* Ubuntu 18.04 Bionic GNU/Linux x86_64
+* KDE neon User Edition 5.17 GNU/Linux x86_64
+* FreeBSD 12.1 x86_64
+
+Download links and installation instructions are provided below.
+
+#### macOS Catalina 10.15.1 x86_64
+
+Download: [repotools-v0.7.1-macOS-Catalina-x86_64.tbz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-macOS-Catalina-x86_64.tbz)
+
+Being based on Ubuntu 18.04 Bionic, KDE neon User Edition 5.17 and the former
+share the same binary release file. You should be able to use the same binaries
+on any other GNU/Linux distro that is based on Ubuntu 18.04 Bionic as well.
+
+Installation:
+
+```sh
+cd ~
+wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-macOS-Catalina-x86_64.tbz
+tar xvf repotools-v0.7.1-macOS-Catalina-x86_64.tbz
+```
+
+The binaries are now available in `~/bin/`. Add that directory
+to your `$PATH` if you don't have it in there already, and then
+if you didn't have it there already, log out and log in again.
+
+#### Ubuntu 18.04 Bionic GNU/Linux x86_64
+
+Download: [repotools-v0.7.1-ubuntu-bionic-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-ubuntu-bionic-x86_64.txz)
+
+Being based on Ubuntu 18.04 Bionic, KDE neon User Edition 5.17 and the former
+share the same binary release file. You should be able to use the same binaries
+on any other GNU/Linux distro that is based on Ubuntu 18.04 Bionic as well.
+
+Installation:
+
+```sh
+cd ~
+wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-ubuntu-bionic-x86_64.txz
+tar xvf repotools-v0.7.1-ubuntu-bionic-x86_64.txz
+```
+
+The binaries are now available in `~/bin/`. Add that directory
+to your `$PATH` if you don't have it in there already, and then
+if you didn't have it there already, log out and log in again.
+
+#### KDE neon User Edition 5.17 GNU/Linux x86_64
+
+Download: [repotools-v0.7.1-ubuntu-bionic-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-ubuntu-bionic-x86_64.txz)
+
+Being based on Ubuntu 18.04 Bionic, KDE neon User Edition 5.17 and the former
+share the same binary release file. You should be able to use the same binaries
+on any other GNU/Linux distro that is based on Ubuntu 18.04 Bionic as well.
+
+Installation:
+
+```sh
+cd ~
+wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-ubuntu-bionic-x86_64.txz
+tar xvf repotools-v0.7.1-ubuntu-bionic-x86_64.txz
+```
+
+The binaries are now available in `~/bin/`. Add that directory
+to your `$PATH` if you don't have it in there already, and then
+if you didn't have it there already, log out and log in again.
+
+#### FreeBSD 12.1 x86_64
+
+Download: [repotools-v0.7.1-freebsd-12.1-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-freebsd-12.1-x86_64.txz)
+
+Installation:
+
+```sh
+cd ~
+wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-freebsd-12.1-x86_64.txz
+tar xvf repotools-v0.7.1-freebsd-12.1-x86_64.txz
+```
+
+The binaries are now available in `~/bin/`. Add that directory
+to your `$PATH` if you don't have it in there already, and then
+if you didn't have it there already, log out and log in again.
 
 ### Building from source
 
