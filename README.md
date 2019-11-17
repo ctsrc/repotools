@@ -10,10 +10,12 @@ even though short, make sense... For the most part ;)
 
 The commands are, in short order: `dp`, `aa`, `st`, `di`, `cm`, `pu` and `le`.
 
-Read on below to see what they mean and what arguments they take, or
-[skip straight to installation](#installation) if you are feeling too impatient.
-(But do go back and read how to use them afterwards if you end up installing
-them right away.)
+These correspond to `git diff`, `git add -A`, `git status`, `git diff --cached`, `git commit -m <message>`, `git push` and `git shortlog -se`.
+
+Fuller descriptions of the commands are availble in the usage section below.
+Read on to get the details, or [skip straight to installation](#installation)
+if you are feeling too impatient. (But do go back and read how to use them
+afterwards if you end up installing them right away.)
 
 ## Usage
 
