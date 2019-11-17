@@ -108,7 +108,7 @@ Installation:
 
 ```sh
 cd ~
-wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-macOS-Catalina-x86_64.tbz
+curl -LJO https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-macOS-Catalina-x86_64.tbz
 tar xvf repotools-v0.7.1-macOS-Catalina-x86_64.tbz
 ```
 
@@ -164,7 +164,7 @@ Installation:
 
 ```sh
 cd ~
-wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-freebsd-12.1-x86_64.txz
+fetch https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.1/repotools-v0.7.1-freebsd-12.1-x86_64.txz
 tar xvf repotools-v0.7.1-freebsd-12.1-x86_64.txz
 ```
 
