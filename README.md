@@ -89,15 +89,36 @@ The name comes from "l" for "log" and "e" for the `-e` flag.
 
 ## Installation
 
-Precompiled binaries will be provided in the future, but for now you'll need
-to have the Rust toolchain installed. If you don't have the Rust toolchain
-installed already, head over to https://rustup.rs/ and follow the instructions
-there and then come back here.
+Precompiled binaries will be provided in the future,
+but for now you'll need to build from source.
 
-Once you have the Rust toolchain installed, simply run:
+### Building from source
+
+In order to build from source, you need to have the Rust toolchain installed.
+If you don't have the Rust toolchain installed already, head on over to
+https://rustup.rs/ and follow the instructions there. Then come back here
+once you've done that.
+
+With the Rust toolchain installed, simply run:
 
 ```bash
 cargo install repotools
+```
+
+This will build and install all of the repotools command utilities.
+
+#### Building and installing only some of the repotools command utilites
+
+If you only wish to build and install some of the repotools command utilities
+rather than all of them, you can do so by making use of the feature flags.
+
+With the Rust toolchain installed (see above), run the following command, with
+the features list adjusted according to your wishing with regards to which of
+the command utilities you would like to build and install:
+
+```bash
+cargo install repotools --no-default-features \
+  --features "dp aa st di cm pu le"
 ```
 
 ## Star Me on GitHub 🤩

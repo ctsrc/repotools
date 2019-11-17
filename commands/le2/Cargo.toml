@@ -1,0 +1,20 @@
+[package]
+name = "le2"
+publish = false
+description = "number of commits by each author in git repository"
+license = "ISC"
+repository = "https://github.com/ctsrc/repotools/tree/master/le2"
+version = "0.9.3"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+
+[[bin]]
+name = "le"
+path = "src/main.rs"
+
+[build-dependencies]
+toml = "0.5.5"
+
+[dependencies]
+clap = { version = "2.33.0", features = ["yaml"] }
+exec = "0.3.1"

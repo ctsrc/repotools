@@ -1,0 +1,20 @@
+[package]
+name = "pu2"
+publish = false
+description = "push commits or tags to remote git repository"
+license = "ISC"
+repository = "https://github.com/ctsrc/repotools/tree/master/pu2"
+version = "0.5.2"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+edition = "2018"
+
+[[bin]]
+name = "pu"
+path = "src/main.rs"
+
+[build-dependencies]
+toml = "0.5.5"
+
+[dependencies]
+clap = { version = "2.33.0", features = ["yaml"] }
+exec = "0.3.1"

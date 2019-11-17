@@ -1,19 +1,18 @@
 [workspace]
 
 members = [
-  "dp2",
-  "aa2",
-  "st2",
-  "di2",
-  "cm2",
-  "pu2",
-  "le2",
-  "tag2",
-  "tags2",
-  "rmtag2",
+  "commands/dp2",
+  "commands/aa2",
+  "commands/st2",
+  "commands/di2",
+  "commands/cm2",
+  "commands/pu2",
+  "commands/le2",
+  "commands/tag2",
+  "commands/tags2",
+  "commands/rmtag2",
 ]
 
 exclude = [
   "repotools",
-  "see_instead",
 ]
