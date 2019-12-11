@@ -4,7 +4,7 @@ publish = false
 description = "add all files in git repository to index, optionally limited to one or more directories"
 license = "ISC"
 repository = "https://github.com/ctsrc/repotools/tree/master/aa2"
-version = "0.9.2"
+version = "0.9.3"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
 edition = "2018"
 
@@ -16,5 +16,5 @@ path = "src/main.rs"
 toml = "0.5.5"
 
 [dependencies]
-clap = { version = "2.33.0", features = ["yaml"] }
+clap = { version = "2.33.0", default-features = false, features = ["yaml"] }
 exec = "0.3.1"
