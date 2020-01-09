@@ -4,7 +4,7 @@ publish = false
 description = "diff files staged for commit in git repository, optionally limited to a given file or directory"
 license = "ISC"
 repository = "https://github.com/ctsrc/repotools/tree/master/di2"
-version = "0.8.2"
+version = "0.8.3"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
 edition = "2018"
 

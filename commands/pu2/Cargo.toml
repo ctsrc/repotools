@@ -4,7 +4,7 @@ publish = false
 description = "push commits or tags to remote git repository"
 license = "ISC"
 repository = "https://github.com/ctsrc/repotools/tree/master/pu2"
-version = "0.5.3"
+version = "0.5.4"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
 edition = "2018"
 

@@ -4,7 +4,7 @@ publish = false
 description = "status of git repository, optionally limited to one or more files or directories"
 license = "ISC"
 repository = "https://github.com/ctsrc/repotools/tree/master/st2"
-version = "0.9.3"
+version = "0.9.4"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
 edition = "2018"
 

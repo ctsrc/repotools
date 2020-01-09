@@ -4,7 +4,7 @@ publish = false
 description = "add all files in git repository to index, optionally limited to one or more directories"
 license = "ISC"
 repository = "https://github.com/ctsrc/repotools/tree/master/aa2"
-version = "0.9.3"
+version = "0.9.4"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
 edition = "2018"
 
