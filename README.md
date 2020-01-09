@@ -95,14 +95,14 @@ The name comes from "l" for "log" and "e" for the `-e` flag.
 
 Precompiled binaries are available for the following operating systems:
 
-* macOS Catalina 10.15.1 x86_64
+* macOS Catalina 10.15.2 x86_64
 * Ubuntu 18.04 Bionic GNU/Linux x86_64
 * KDE neon User Edition 5.17 GNU/Linux x86_64
 * FreeBSD 12.1 x86_64
 
 Download links and installation instructions are provided below.
 
-#### macOS Catalina 10.15.1 x86_64
+#### macOS Catalina 10.15.2 x86_64
 
 Download: [repotools-v0.7.5-macOS-Catalina-x86_64.tbz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-macOS-Catalina-x86_64.tbz)
 
