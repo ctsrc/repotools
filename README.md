@@ -160,14 +160,14 @@ if you didn't have it there already, log out and log in again.
 
 #### FreeBSD 12.1 x86_64
 
-Download: [repotools-v0.7.5-freebsd-12.1-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-freebsd-12.1-x86_64.txz)
+Download: [repotools-v0.7.5-FreeBSD-12.1-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-FreeBSD-12.1-x86_64.txz)
 
 Installation:
 
 ```sh
 cd ~
-fetch https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-freebsd-12.1-x86_64.txz
-tar xvf repotools-v0.7.5-freebsd-12.1-x86_64.txz
+fetch https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-FreeBSD-12.1-x86_64.txz
+tar xvf repotools-v0.7.5-FreeBSD-12.1-x86_64.txz
 ```
 
 The binaries are now available in `~/bin/`. Add that directory
