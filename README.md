@@ -104,14 +104,14 @@ Download links and installation instructions are provided below.
 
 #### macOS Catalina 10.15.2 x86_64
 
-Download: [repotools-v0.7.5-macOS-Catalina-x86_64.tbz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-macOS-Catalina-x86_64.tbz)
+Download: [repotools-v0.8.0-macOS-Catalina-x86_64.tbz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-macOS-Catalina-x86_64.tbz)
 
 Installation:
 
 ```sh
 cd ~
-curl -LJO https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-macOS-Catalina-x86_64.tbz
-tar xvf repotools-v0.7.5-macOS-Catalina-x86_64.tbz
+curl -LJO https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-macOS-Catalina-x86_64.tbz
+tar xvf repotools-v0.8.0-macOS-Catalina-x86_64.tbz
 ```
 
 The binaries are now available in `~/bin/`. Add that directory
@@ -120,7 +120,7 @@ if you didn't have it there already, log out and log in again.
 
 #### Ubuntu 18.04 Bionic GNU/Linux x86_64
 
-Download: [repotools-v0.7.5-ubuntu-bionic-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-ubuntu-bionic-x86_64.txz)
+Download: [repotools-v0.8.0-ubuntu-bionic-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-ubuntu-bionic-x86_64.txz)
 
 Being based on Ubuntu 18.04 Bionic, KDE neon User Edition 5.17 and the former
 share the same binary release file. You should be able to use the same binaries
@@ -130,8 +130,8 @@ Installation:
 
 ```sh
 cd ~
-wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-ubuntu-bionic-x86_64.txz
-tar xvf repotools-v0.7.5-ubuntu-bionic-x86_64.txz
+wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-ubuntu-bionic-x86_64.txz
+tar xvf repotools-v0.8.0-ubuntu-bionic-x86_64.txz
 ```
 
 The binaries are now available in `~/bin/`. Add that directory
@@ -140,7 +140,7 @@ if you didn't have it there already, log out and log in again.
 
 #### KDE neon User Edition 5.17 GNU/Linux x86_64
 
-Download: [repotools-v0.7.5-ubuntu-bionic-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-ubuntu-bionic-x86_64.txz)
+Download: [repotools-v0.8.0-ubuntu-bionic-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-ubuntu-bionic-x86_64.txz)
 
 Being based on Ubuntu 18.04 Bionic, KDE neon User Edition 5.17 and the former
 share the same binary release file. You should be able to use the same binaries
@@ -150,8 +150,8 @@ Installation:
 
 ```sh
 cd ~
-wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-ubuntu-bionic-x86_64.txz
-tar xvf repotools-v0.7.5-ubuntu-bionic-x86_64.txz
+wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-ubuntu-bionic-x86_64.txz
+tar xvf repotools-v0.8.0-ubuntu-bionic-x86_64.txz
 ```
 
 The binaries are now available in `~/bin/`. Add that directory
@@ -160,14 +160,14 @@ if you didn't have it there already, log out and log in again.
 
 #### FreeBSD 12.1 x86_64
 
-Download: [repotools-v0.7.5-FreeBSD-12.1-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-FreeBSD-12.1-x86_64.txz)
+Download: [repotools-v0.8.0-FreeBSD-12.1-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-FreeBSD-12.1-x86_64.txz)
 
 Installation:
 
 ```sh
 cd ~
-fetch https://github.com/ctsrc/repotools/releases/download/repotools-v0.7.5/repotools-v0.7.5-FreeBSD-12.1-x86_64.txz
-tar xvf repotools-v0.7.5-FreeBSD-12.1-x86_64.txz
+fetch https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-FreeBSD-12.1-x86_64.txz
+tar xvf repotools-v0.8.0-FreeBSD-12.1-x86_64.txz
 ```
 
 The binaries are now available in `~/bin/`. Add that directory

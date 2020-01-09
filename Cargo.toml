@@ -1,18 +1,53 @@
-[workspace]
+[package]
+name = "repotools"
+description = "Short names, big time savings. Repotools is a collection of commands with short but meaningful names, for the git operations you perform most often."
+license = "ISC"
+readme = "README.md"
+repository = "https://github.com/ctsrc/repotools"
+version = "0.8.0"
+authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
+categories = ["command-line-utilities", "development-tools", "science"]
+keywords  = ["git"]
+edition = "2018"
 
-members = [
-  "commands/dp2",
-  "commands/aa2",
-  "commands/st2",
-  "commands/di2",
-  "commands/cm2",
-  "commands/pu2",
-  "commands/le2",
-  "commands/tag2",
-  "commands/tags2",
-  "commands/rmtag2",
-]
+[[bin]]
+name = "dp"
+required-features = ["dp"]
 
-exclude = [
-  "repotools",
-]
+[[bin]]
+name = "aa"
+required-features = ["aa"]
+
+[[bin]]
+name = "st"
+required-features = ["st"]
+
+[[bin]]
+name = "di"
+required-features = ["di"]
+
+[[bin]]
+name = "cm"
+required-features = ["cm"]
+
+[[bin]]
+name = "pu"
+required-features = ["pu"]
+
+[[bin]]
+name = "le"
+required-features = ["le"]
+
+[features]
+default = ["dp","aa","st","di","cm","pu","le"]
+dp = []
+aa = []
+st = []
+di = []
+cm = []
+pu = []
+le = []
+
+[dependencies]
+clap = { version = "2.33.0", default-features = false, features = ["yaml"] }
+exec = "0.3.1"

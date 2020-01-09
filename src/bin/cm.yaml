@@ -1,0 +1,6 @@
+name: cm
+version: 0.10.0
+about: git commit with message
+args:
+  - message:
+      required: true
