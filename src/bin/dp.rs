@@ -17,26 +17,26 @@
 use clap::load_yaml;
 use clap::App;
 
-fn main ()
-{
-  let yaml = load_yaml!("dp.yaml");
-  let command = App::from_yaml(yaml);
-  let command_name: String = command.get_name().into();
-  let args = command.get_matches();
+fn main() {
+    let yaml = load_yaml!("dp.yaml");
+    let command = App::from_yaml(yaml);
+    let command_name: String = command.get_name().into();
+    let args = command.get_matches();
 
-  let paths: Vec<_> = match args.values_of("path")
-  {
-    Some(paths) => paths.collect(),
-    None => vec![],
-  };
+    let paths: Vec<_> = match args.values_of("path") {
+        Some(paths) => paths.collect(),
+        None => vec![],
+    };
 
-  // TODO: Check that both files are inside of the current git repository.
-  //       git can also diff against files outside of current repo
-  //       but we don't want that functionality in this utilitiy.
+    // TODO: Check that both files are inside of the current git repository.
+    //       git can also diff against files outside of current repo
+    //       but we don't want that functionality in this utilitiy.
 
-  let err = exec::Command::new("git")
-    .arg("diff").arg("--").args(&paths)
-    .exec();
-  eprintln!("{}: {}", command_name, err);
-  std::process::exit(1);
+    let err = exec::Command::new("git")
+        .arg("diff")
+        .arg("--")
+        .args(&paths)
+        .exec();
+    eprintln!("{}: {}", command_name, err);
+    std::process::exit(1);
 }

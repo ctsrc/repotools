@@ -17,33 +17,29 @@
 use clap::load_yaml;
 use clap::App;
 
-fn main ()
-{
-  let yaml = load_yaml!("pu.yaml");
-  let command = App::from_yaml(yaml);
-  let command_name: String = command.get_name().into();
-  let args = command.get_matches();
+fn main() {
+    let yaml = load_yaml!("pu.yaml");
+    let command = App::from_yaml(yaml);
+    let command_name: String = command.get_name().into();
+    let args = command.get_matches();
 
-  let mut git_args = vec![];
+    let mut git_args = vec![];
 
-  if args.is_present("push_tags")
-  {
-    git_args.push("--tags");
-  }
+    if args.is_present("push_tags") {
+        git_args.push("--tags");
+    }
 
-  if args.is_present("force_push")
-  {
-    git_args.push("-f");
-  }
+    if args.is_present("force_push") {
+        git_args.push("-f");
+    }
 
-  git_args.push("--");
+    git_args.push("--");
 
-  if let Some(repository) = args.value_of("repository")
-  {
-    git_args.push(repository);
-  }
+    if let Some(repository) = args.value_of("repository") {
+        git_args.push(repository);
+    }
 
-  let err = exec::Command::new("git").arg("push").args(&git_args).exec();
-  eprintln!("{}: {}", command_name, err);
-  std::process::exit(1);
+    let err = exec::Command::new("git").arg("push").args(&git_args).exec();
+    eprintln!("{}: {}", command_name, err);
+    std::process::exit(1);
 }

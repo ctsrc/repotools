@@ -17,22 +17,22 @@
 use clap::load_yaml;
 use clap::App;
 
-fn main ()
-{
-  let yaml = load_yaml!("st.yaml");
-  let command = App::from_yaml(yaml);
-  let command_name: String = command.get_name().into();
-  let args = command.get_matches();
+fn main() {
+    let yaml = load_yaml!("st.yaml");
+    let command = App::from_yaml(yaml);
+    let command_name: String = command.get_name().into();
+    let args = command.get_matches();
 
-  let pathspecs: Vec<_> = match args.values_of("pathspec")
-  {
-    Some(pathspecs) => pathspecs.collect(),
-    None => vec![],
-  };
+    let pathspecs: Vec<_> = match args.values_of("pathspec") {
+        Some(pathspecs) => pathspecs.collect(),
+        None => vec![],
+    };
 
-  let err = exec::Command::new("git")
-    .arg("status").arg("--").args(&pathspecs)
-    .exec();
-  eprintln!("{}: {}", command_name, err);
-  std::process::exit(1);
+    let err = exec::Command::new("git")
+        .arg("status")
+        .arg("--")
+        .args(&pathspecs)
+        .exec();
+    eprintln!("{}: {}", command_name, err);
+    std::process::exit(1);
 }

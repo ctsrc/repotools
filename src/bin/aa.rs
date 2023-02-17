@@ -14,50 +14,47 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-use std::fs::metadata;
 use clap::load_yaml;
 use clap::App;
+use std::fs::metadata;
 
-fn main ()
-{
-  let yaml = load_yaml!("aa.yaml");
-  let command = App::from_yaml(yaml);
-  let command_name: String = command.get_name().into();
-  let args = command.get_matches();
+fn main() {
+    let yaml = load_yaml!("aa.yaml");
+    let command = App::from_yaml(yaml);
+    let command_name: String = command.get_name().into();
+    let args = command.get_matches();
 
-  let paths: Vec<_> = match args.values_of("path")
-  {
-    Some(paths) => paths.collect(),
-    None => vec![],
-  };
+    let paths: Vec<_> = match args.values_of("path") {
+        Some(paths) => paths.collect(),
+        None => vec![],
+    };
 
-  let mut preflight_all_good = true;
+    let mut preflight_all_good = true;
 
-  for &path in &paths
-  {
-    match metadata(path)
-    {
-      Ok(md) => {
-        if !md.is_dir()
-        {
-          preflight_all_good = false;
-          eprintln!("{}: {}: File is not a directory", command_name, path);
+    for &path in &paths {
+        match metadata(path) {
+            Ok(md) => {
+                if !md.is_dir() {
+                    preflight_all_good = false;
+                    eprintln!("{}: {}: File is not a directory", command_name, path);
+                }
+            }
+            Err(e) => {
+                preflight_all_good = false;
+                eprintln!("{}: {}: {}", command_name, path, e);
+            }
         }
-      },
-      Err(e) => {
-        preflight_all_good = false;
-        eprintln!("{}: {}: {}", command_name, path, e);
-      },
     }
-  }
 
-  if preflight_all_good
-  {
-    let err = exec::Command::new("git")
-      .arg("add").arg("-A").arg("--").args(&paths)
-      .exec();
-    eprintln!("{}: {}", command_name, err);
-  }
-  // Getting to this point means preflight failed or exec failed.
-  std::process::exit(1);
+    if preflight_all_good {
+        let err = exec::Command::new("git")
+            .arg("add")
+            .arg("-A")
+            .arg("--")
+            .args(&paths)
+            .exec();
+        eprintln!("{}: {}", command_name, err);
+    }
+    // Getting to this point means preflight failed or exec failed.
+    std::process::exit(1);
 }

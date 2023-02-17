@@ -17,14 +17,13 @@
 use clap::load_yaml;
 use clap::App;
 
-fn main ()
-{
-  let yaml = load_yaml!("le.yaml");
-  let command = App::from_yaml(yaml);
-  let command_name: String = command.get_name().into();
-  command.get_matches();
+fn main() {
+    let yaml = load_yaml!("le.yaml");
+    let command = App::from_yaml(yaml);
+    let command_name: String = command.get_name().into();
+    command.get_matches();
 
-  let err = exec::Command::new("git").arg("shortlog").arg("-se").exec();
-  eprintln!("{}: {}", command_name, err);
-  std::process::exit(1);
+    let err = exec::Command::new("git").arg("shortlog").arg("-se").exec();
+    eprintln!("{}: {}", command_name, err);
+    std::process::exit(1);
 }

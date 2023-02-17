@@ -17,17 +17,19 @@
 use clap::load_yaml;
 use clap::App;
 
-fn main ()
-{
-  let yaml = load_yaml!("cm.yaml");
-  let command = App::from_yaml(yaml);
-  let command_name: String = command.get_name().into();
-  let args = command.get_matches();
+fn main() {
+    let yaml = load_yaml!("cm.yaml");
+    let command = App::from_yaml(yaml);
+    let command_name: String = command.get_name().into();
+    let args = command.get_matches();
 
-  let msg = args.value_of("message").unwrap();
+    let msg = args.value_of("message").unwrap();
 
-  let err = exec::Command::new("git")
-    .arg("commit").arg("-m").arg(&msg).exec();
-  eprintln!("{}: {}", command_name, err);
-  std::process::exit(1);
+    let err = exec::Command::new("git")
+        .arg("commit")
+        .arg("-m")
+        .arg(&msg)
+        .exec();
+    eprintln!("{}: {}", command_name, err);
+    std::process::exit(1);
 }
