@@ -1,6 +1,9 @@
 # repotools
 
-[![Crates.io](https://img.shields.io/crates/v/repotools.svg)](https://crates.io/crates/repotools) [![GitHub stars](https://img.shields.io/github/stars/ctsrc/repotools?style=social)](https://github.com/ctsrc/repotools#start-of-content)
+[![Crates.io](https://img.shields.io/crates/v/repotools?style=flat-square)](https://crates.io/crates/repotools)
+[![Crates.io](https://img.shields.io/crates/d/repotools?style=flat-square)](https://crates.io/crates/repotools)
+[![License](https://img.shields.io/badge/license-ISC-blue?style=flat-square)](LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/ctsrc/repotools?style=social)](https://github.com/ctsrc/repotools#start-of-content)
 
 Short names, big time savings – a collection of commands
 for the git operations you perform most often.
