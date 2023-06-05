@@ -11,9 +11,9 @@ for the git operations you perform most often.
 Meaningful and memorable: All of the commands have names that,
 even though short, make sense... For the most part ;)
 
-The commands are, in short order: `dp`, `aa`, `st`, `di`, `cm`, `pu` and `le`.
+The commands are, in short order: `dp`, `aa`, `st`, `di`, `cm`, `pu`, `le` and `ud`.
 
-These correspond to `git diff`, `git add -A`, `git status`, `git diff --cached`, `git commit -m <message>`, `git push` and `git shortlog -se`.
+These correspond to `git diff`, `git add -A`, `git status`, `git diff --cached`, `git commit -m <message>`, `git push`, `git shortlog -se` and `git restore --staged ; git restore`.
 
 Fuller descriptions of the commands are availble in the usage section below.
 Read on to get the details, or [skip straight to installation](#installation)
@@ -92,90 +92,13 @@ The name comes from "l" for "log" and "e" for the `-e` flag.
 
 `le` is like `git shortlog -se`, only more awesome.
 
+### `ud` – undelete file
+
+`ud` is like `git restore --staged ; git restore`, only more awesome.
+
+Use it to undelete a file that has been removed and staged for removal.
+
 ## Installation
-
-### Precompiled binaries
-
-Precompiled binaries are available for the following operating systems:
-
-* macOS Catalina 10.15.2 x86_64
-* Ubuntu 18.04 Bionic GNU/Linux x86_64
-* KDE neon User Edition 5.17 GNU/Linux x86_64
-* FreeBSD 12.1 x86_64
-
-Download links and installation instructions are provided below.
-
-#### macOS Catalina 10.15.2 x86_64
-
-Download: [repotools-v0.8.0-macOS-Catalina-x86_64.tbz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-macOS-Catalina-x86_64.tbz)
-
-Installation:
-
-```sh
-cd ~
-curl -LJO https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-macOS-Catalina-x86_64.tbz
-tar xvf repotools-v0.8.0-macOS-Catalina-x86_64.tbz
-```
-
-The binaries are now available in `~/bin/`. Add that directory
-to your `$PATH` if you don't have it in there already, and then
-if you didn't have it there already, log out and log in again.
-
-#### Ubuntu 18.04 Bionic GNU/Linux x86_64
-
-Download: [repotools-v0.8.0-ubuntu-bionic-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-ubuntu-bionic-x86_64.txz)
-
-Being based on Ubuntu 18.04 Bionic, KDE neon User Edition 5.17 and the former
-share the same binary release file. You should be able to use the same binaries
-on any other GNU/Linux distro that is based on Ubuntu 18.04 Bionic as well.
-
-Installation:
-
-```sh
-cd ~
-wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-ubuntu-bionic-x86_64.txz
-tar xvf repotools-v0.8.0-ubuntu-bionic-x86_64.txz
-```
-
-The binaries are now available in `~/bin/`. Add that directory
-to your `$PATH` if you don't have it in there already, and then
-if you didn't have it there already, log out and log in again.
-
-#### KDE neon User Edition 5.17 GNU/Linux x86_64
-
-Download: [repotools-v0.8.0-ubuntu-bionic-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-ubuntu-bionic-x86_64.txz)
-
-Being based on Ubuntu 18.04 Bionic, KDE neon User Edition 5.17 and the former
-share the same binary release file. You should be able to use the same binaries
-on any other GNU/Linux distro that is based on Ubuntu 18.04 Bionic as well.
-
-Installation:
-
-```sh
-cd ~
-wget https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-ubuntu-bionic-x86_64.txz
-tar xvf repotools-v0.8.0-ubuntu-bionic-x86_64.txz
-```
-
-The binaries are now available in `~/bin/`. Add that directory
-to your `$PATH` if you don't have it in there already, and then
-if you didn't have it there already, log out and log in again.
-
-#### FreeBSD 12.1 x86_64
-
-Download: [repotools-v0.8.0-FreeBSD-12.1-x86_64.txz](https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-FreeBSD-12.1-x86_64.txz)
-
-Installation:
-
-```sh
-cd ~
-fetch https://github.com/ctsrc/repotools/releases/download/repotools-v0.8.0/repotools-v0.8.0-FreeBSD-12.1-x86_64.txz
-tar xvf repotools-v0.8.0-FreeBSD-12.1-x86_64.txz
-```
-
-The binaries are now available in `~/bin/`. Add that directory
-to your `$PATH` if you don't have it in there already, and then
-if you didn't have it there already, log out and log in again.
 
 ### Building from source
 
@@ -203,7 +126,7 @@ the command utilities you would like to build and install:
 
 ```bash
 cargo install repotools --no-default-features \
-  --features "dp aa st di cm pu le"
+  --features "dp aa st di cm pu le ud"
 ```
 
 ## Star Me on GitHub 🤩

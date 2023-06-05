@@ -4,7 +4,7 @@ description = "Short names, big time savings. Repotools is a collection of comma
 license = "ISC"
 readme = "README.md"
 repository = "https://github.com/ctsrc/repotools"
-version = "0.8.0"
+version = "0.9.0"
 authors = ["Erik Nordstrøm <erik@nordstroem.no>"]
 categories = ["command-line-utilities", "development-tools", "science"]
 keywords  = ["git"]
@@ -38,8 +38,12 @@ required-features = ["pu"]
 name = "le"
 required-features = ["le"]
 
+[[bin]]
+name = "ud"
+required-features = ["ud"]
+
 [features]
-default = ["dp","aa","st","di","cm","pu","le"]
+default = ["dp","aa","st","di","cm","pu","le","ud"]
 dp = []
 aa = []
 st = []
@@ -47,6 +51,7 @@ di = []
 cm = []
 pu = []
 le = []
+ud = []
 
 [dependencies]
 clap = { version = "2.33.0", default-features = false, features = ["yaml"] }
