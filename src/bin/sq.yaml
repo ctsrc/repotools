@@ -1,0 +1,3 @@
+name: sq
+version: 0.1.0
+about: squash commits in a branch in manner similar to <https://stackoverflow.com/questions/30136558/how-to-squash-commits-which-have-merge-commit-in-between/69827502#69827502>
