@@ -1,5 +1,5 @@
 name: di
-version: 0.9.0
+version: 1.0.0
 about: diff files staged for commit in git repository
 args:
   - path:

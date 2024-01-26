@@ -1,5 +1,5 @@
 name: pu
-version: 0.6.0
+version: 1.0.0
 about: push commits or tags to remote git repository
 args:
   - push_tags:

@@ -1,5 +1,5 @@
 name: aa
-version: 0.10.0
+version: 1.0.0
 about: add all files in git repository to index, optionally limited to one or more directories
 args:
   - path:

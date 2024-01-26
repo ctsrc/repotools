@@ -1,5 +1,5 @@
 name: st
-version: 0.10.0
+version: 1.0.0
 about: status of git repository, optionally limited to one or more files or directories
 args:
   - pathspec:
