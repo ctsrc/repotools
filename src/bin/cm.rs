@@ -28,7 +28,7 @@ fn main() {
     let err = exec::Command::new("git")
         .arg("commit")
         .arg("-m")
-        .arg(&msg)
+        .arg(msg)
         .exec();
     eprintln!("{}: {}", command_name, err);
     std::process::exit(1);
