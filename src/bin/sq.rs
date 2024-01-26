@@ -89,12 +89,12 @@ fn main() {
     let temp_branch = format!("temp-{ulid}");
     eprintln!("Temporary branch: {temp_branch}");
 
-    // Squash op step 1: Create temporary branch
+    // Squash op step 1: Create temporary branch from local version of default branch
     let status = Command::new("git")
         .arg("checkout")
         .arg("-b")
         .arg(&temp_branch)
-        .arg(default_branch_w_remote_prefix)
+        .arg(default_branch)
         .status()
         .expect("Create temporary branch");
     if !status.success() {
@@ -104,7 +104,7 @@ fn main() {
     // TODO: If any subsequent command fails after this point,
     //       go back to branch we were on and then delete the temporary branch.
 
-    // Squash op step 2: Squash the branch
+    // Squash op step 2: Squash the original branch into the temp branch
     let status = Command::new("git")
         .arg("merge")
         .arg("--squash")
