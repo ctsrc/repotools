@@ -1,7 +1,0 @@
-name: ud
-version: 0.1.0
-about: undelete files staged for deletion
-args:
-  - path:
-      help: Files or directories to restore.
-      multiple: true

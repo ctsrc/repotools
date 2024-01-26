@@ -38,12 +38,8 @@ required-features = ["pu"]
 name = "le"
 required-features = ["le"]
 
-[[bin]]
-name = "ud"
-required-features = ["ud"]
-
 [features]
-default = ["dp","aa","st","di","cm","pu","le","ud"]
+default = ["dp","aa","st","di","cm","pu","le"]
 dp = []
 aa = []
 st = []
@@ -51,7 +47,6 @@ di = []
 cm = []
 pu = []
 le = []
-ud = []
 
 [dependencies]
 clap = { version = "2.33.0", default-features = false, features = ["yaml"] }
