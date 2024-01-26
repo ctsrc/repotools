@@ -11,9 +11,10 @@ for the git operations you perform most often.
 Meaningful and memorable: All of the commands have names that,
 even though short, make sense... For the most part ;)
 
-The commands are, in short order: `dp`, `aa`, `st`, `di`, `cm`, `pu`, `le` and `ud`.
+The commands are, in short order: `dp`, `aa`, `st`, `di`, `cm`, `pu`, `le` and `sq`.
 
-These correspond to `git diff`, `git add -A`, `git status`, `git diff --cached`, `git commit -m <message>`, `git push`, `git shortlog -se` and `git restore --staged ; git restore`.
+These correspond to `git diff`, `git add -A`, `git status`, `git diff --cached`,
+`git commit -m <message>`, `git push`, `git shortlog -se` and squashing a branch.
 
 Fuller descriptions of the commands are availble in the usage section below.
 Read on to get the details, or [skip straight to installation](#installation)
@@ -92,11 +93,13 @@ The name comes from "l" for "log" and "e" for the `-e` flag.
 
 `le` is like `git shortlog -se`, only more awesome.
 
-### `ud` – undelete file
+### `sq` – squash commits
 
-`ud` is like `git restore --staged ; git restore`, only more awesome.
+Squash commits in a branch in manner similar to
+<https://stackoverflow.com/questions/30136558/how-to-squash-commits-which-have-merge-commit-in-between/69827502#69827502>,
+only more awesome.
 
-Use it to undelete a file that has been removed and staged for removal.
+Use it to squash a branch after you have merged the default branch into it.
 
 ## Installation
 
@@ -126,7 +129,7 @@ the command utilities you would like to build and install:
 
 ```bash
 cargo install repotools --no-default-features \
-  --features "dp aa st di cm pu le ud"
+  --features "dp aa st di cm pu le sq"
 ```
 
 ## Star Me on GitHub 🤩
