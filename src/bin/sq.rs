@@ -134,6 +134,15 @@ fn main() {
     if !status.success() {
         panic!("Failed to checkout original squash");
     }
+    let status = Command::new("git")
+        .arg("reset")
+        .arg("--hard")
+        .arg(&temp_branch)
+        .status()
+        .expect("Point original branch to contents from temporary branch");
+    if !status.success() {
+        panic!("Failed to point original branch to contents from temporary branch");
+    }
 
     // Squash op step 5: Delete temporary branch
     let status = Command::new("git")
